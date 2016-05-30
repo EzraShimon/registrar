@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'offerings/search'
+
+  get 'offerings/display'
+
+  get 'offerings/enroll'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
