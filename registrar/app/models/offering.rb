@@ -1,8 +1,8 @@
 class Offering < ActiveRecord::Base
     belongs_to :course
     enum semester: {
-        fall: 0,
-        spring: 1,
-        summer: 2
+        Fall: 0,
+        Spring: 1,
+        Summer: 2
     }
 end

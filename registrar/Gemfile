@@ -46,7 +46,9 @@ group :development do
 end
 
 group :test do
-  gem 'jasmine'
+  gem 'rspec-rails'
+  gem 'ZenTest'
+  gem 'autotest-rails'
   gem 'cucumber', :require => false
   gem 'cucumber-rails-training-wheels' # some pre-fabbed step definitions
   gem 'database_cleaner' # to clear Cucumber's test database between runs
