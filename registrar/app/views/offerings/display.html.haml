@@ -1,0 +1,21 @@
+%h1 Offerings
+%table
+    %thead
+        %tr
+            %th CRN
+            %th Dep
+            %th Num
+            %th Course Name
+            %th Timeslot
+            %th Instructor
+            %th Slots Available
+    %tbody
+        - @submissions.each do |s|
+            %tr
+                %td= @offerings[:crn]
+                %td= @offerings[:department]
+                %td= @offerings[:course_number]
+                %td= @offerings[:title]
+                %td= @offerings[:section]
+                %td= @offerings[:professor_last_name]
+                %td= @offerings[:spots_available]
